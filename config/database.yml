@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: zoonoses
+  host: localhost
+  pool: 5
+  username: postgres
+  password: umasenha
+  
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: zoonoses
+  pool: 5
+  host: localhost
+  username: postgres
+  password: umasenha
