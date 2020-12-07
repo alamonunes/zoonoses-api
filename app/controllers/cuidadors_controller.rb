@@ -12,8 +12,7 @@ class CuidadorsController < ApplicationController
 
   # GET /cuidadors/1
   def show
-    # render json: @cuidador.to_json(:only => [:id, :cpf, :nome, :sexo, :telefone, :datanasc, :email], :include => :animal), status: :ok
-    render json: @cuidador, include: :animal
+    render json: @cuidador.to_json(:only => [:id, :cpf, :nome, :sexo, :telefone, :datanasc, :email], :include => :animal), status: :ok
   end
 
   # POST /cuidadors
