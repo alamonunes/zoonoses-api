@@ -7,6 +7,6 @@ class Cuidador < ApplicationRecord
             length: { minimum: 6 },
             if: -> { new_record? || !password.nil? }
 
-    has_one :animal
+    has_one :animal, :required => true
     accepts_nested_attributes_for :animal, :allow_destroy => true
 end
